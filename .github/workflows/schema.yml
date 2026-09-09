@@ -1,0 +1,48 @@
+name: Schema Validation
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install jsonschema
+        run: pip install jsonschema
+      - name: Validate schema is well-formed and examples conform
+        run: |
+          python <<'PY'
+          import json, glob, sys
+          from jsonschema import Draft202012Validator
+
+          schema = json.load(open("template/agent-manifest.schema.json"))
+          Draft202012Validator.check_schema(schema)
+          print("Schema is well-formed (Draft 2020-12).")
+
+          validator = Draft202012Validator(schema)
+          examples = sorted(glob.glob("examples/*/agent-manifest.json"))
+          if not examples:
+              print("No example manifests found; nothing to validate.")
+              sys.exit(0)
+
+          failed = False
+          for path in examples:
+              instance = json.load(open(path))
+              errors = sorted(validator.iter_errors(instance), key=lambda e: e.path)
+              if errors:
+                  failed = True
+                  print(f"FAIL: {path}")
+                  for err in errors:
+                      print(f"  - {'/'.join(str(p) for p in err.absolute_path) or '(root)'}: {err.message}")
+              else:
+                  print(f"OK:   {path}")
+
+          sys.exit(1 if failed else 0)
+          PY

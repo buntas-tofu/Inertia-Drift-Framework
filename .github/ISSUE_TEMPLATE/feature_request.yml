@@ -1,0 +1,41 @@
+name: Feature or improvement
+description: Propose a change to the framework
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For substantive changes, please open an issue (this one) before opening a PR. See `CONTRIBUTING.md`.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or motivation
+      description: What pain point or limitation are you addressing?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the change you have in mind. Include enough detail to discuss approach.
+    validations:
+      required: true
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Change type
+      description: Per semver, how would you classify this?
+      options:
+        - "PATCH (bug fix, no breaking change)"
+        - "MINOR (additive, no breaking change)"
+        - "MAJOR (breaking change)"
+        - "Not sure"
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any approaches you considered and rejected.
+    validations:
+      required: false

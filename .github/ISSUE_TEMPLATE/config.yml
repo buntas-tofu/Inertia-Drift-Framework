@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or discussion
+    url: https://github.com/buntas-tofu/dmf/discussions
+    about: Use Discussions for questions about applying DMF, framework concepts, or general feedback.
+  - name: Security vulnerability
+    url: https://github.com/buntas-tofu/dmf/security/advisories/new
+    about: Report security issues privately via GitHub Security Advisories. See SECURITY.md.

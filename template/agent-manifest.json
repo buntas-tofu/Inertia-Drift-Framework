@@ -1,0 +1,102 @@
+{
+  "$schema": "./agent-manifest.schema.json",
+  "manifest_version": "0.1.0",
+
+  "_DMF_global": {
+    "_comment": "Principal-level defaults. The owner block is populated during INITIAL (Phase 2 interview) on first bootstrap; once populated, it persists across the project's lifetime. Defaults below are framework recommendations and may be overridden in LOCAL.",
+    "owner": {
+      "name": "[principal]",
+      "contact": "principal@example.com"
+    },
+    "defaults": {
+      "license": "MIT",
+      "versioning_scheme": "semver",
+      "timestamp_format": "RFC3339",
+      "hash_algorithm": "sha256",
+      "changelog": "CHANGELOG.md",
+      "inference_posture": "labeled",
+      "authority_model": "three-tier"
+    }
+  },
+
+  "_DMF_initial": {
+    "_comment": "Bootstrap directives. The presence of this key signals that the manifest is unpopulated. Remove this entire key after bootstrap is approved.",
+    "directive": "Populate the 'project', 'agent_contract', and 'tools' sections by scanning the repository. For any field not discoverable from existing files, ask the project owner. Present the populated manifest for review. Upon approval, remove the '_DMF_initial' key entirely and commit with message: 'DMF: bootstrap agent-manifest complete'.",
+    "discovery_hints": {
+      "project_identity": [
+        "package.json",
+        "pyproject.toml",
+        "Cargo.toml",
+        "go.mod",
+        "*.csproj",
+        "pom.xml",
+        "setup.py",
+        "setup.cfg",
+        "composer.json",
+        "build.gradle",
+        "build.gradle.kts",
+        "mix.exs",
+        "Gemfile"
+      ],
+      "schemas": [
+        "schemas/*.json",
+        "schemas/*.yaml",
+        "schemas/*.yml"
+      ],
+      "tool_specs": [
+        "tools/openapi/*.yaml",
+        "tools/openapi/*.json",
+        "tools/openapi/*.yml"
+      ],
+      "policies": [
+        "policy/*.md",
+        "docs/policy/*.md",
+        "SECURITY.md"
+      ],
+      "state": [
+        "state/*.json",
+        "state/*.yaml"
+      ],
+      "prompts": [
+        "prompts/*.yaml",
+        "prompts/*.yml",
+        "prompts/*.md",
+        "prompts/*.txt"
+      ]
+    },
+    "stack_hints": {
+      "_comment": "Add stack-specific discovery patterns here for this project. Do not modify the master DMF template. Example: for a Django project you might add 'settings': ['**/settings.py', '**/settings/*.py']."
+    }
+  },
+
+  "project": {
+    "name": "",
+    "description": "",
+    "version": "",
+    "repo_root": ".",
+    "primary_language": "",
+    "framework": "",
+    "readme": "README.md",
+    "agents_doc": "AGENTS.md"
+  },
+
+  "agent_contract": {
+    "prompt_pack": "",
+    "policies": [],
+    "schemas": [],
+    "state_snapshot": ""
+  },
+
+  "tools": [],
+
+  "provenance": {
+    "run_manifest_dir": "runs/",
+    "timestamp_format": "RFC3339",
+    "hash": "sha256"
+  },
+
+  "versioning": {
+    "scheme": "semver",
+    "changelog": "CHANGELOG.md"
+  }
+}
