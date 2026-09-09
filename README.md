@@ -1,6 +1,6 @@
-# DMF: Drift Management Framework
+# Inertia-Drift-Framework
 
-**Context-Invariant Developmental Governance Stack**
+**DMF for short. Catch the drift you get from inertia.**
 
 A governance framework designed to prevent drift, ambiguity, and authority
 confusion when working with LLMs and AI-assisted development. Lightweight,
@@ -97,7 +97,7 @@ markdown and JSON, plus one stdlib script.
 ## Repository Layout
 
 ```
-dmf/
+inertia-drift-framework/
 ├── template/          # the four artifacts adopters copy into their project
 ├── examples/          # worked examples of populated DMF instances
 │   └── buntas-tofu/   # this principal's filled-in template, reference for
@@ -112,12 +112,14 @@ dmf/
 ## History
 
 DMF began as DGF, the Development Governance Framework, and ran through two
-more identities before landing on this name. The lineage, the decision
-records, and the evolution policy are archived in the project's history. The
-framework shipped its first public release in April 2026, ran through four
-months of real agent work across a multi-node local fabric, and returned as
-2.0 with the lessons: the linter, the delegation semantics, the untrusted-
-content rule, and the memory pipeline.
+more identities before landing on DMF. In September 2026 the public long form
+became Inertia-Drift-Framework: the acronym stayed, and the name now says
+what the linter does. The lineage, the decision records, and the evolution
+policy are archived in the project's history. The framework shipped its
+first public release in April 2026, ran through four months of real agent
+work across a multi-node local fabric, and returned as 2.0 with the lessons:
+the linter, the delegation semantics, the untrusted-content rule, and the
+memory pipeline.
 
 ## License and Contributing
 

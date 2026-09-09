@@ -8,6 +8,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Changed
 
+- **The public name is now Inertia-Drift-Framework.** DMF keeps the acronym
+  and the lineage; the long form now says what the linter does. The
+  repository moved from buntas-tofu/dmf to buntas-tofu/Inertia-Drift-
+  Framework; the old URL redirects.
+
 - **Hard Style Constraints are scoped to artifacts.** Section 1 of the principal
   contract used to close with "and any other text the agent produces. No
   exceptions," which reached conversational replies and the agent's own

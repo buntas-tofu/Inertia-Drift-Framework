@@ -27,7 +27,7 @@ jobs:
         with:
           args: >-
             --no-progress
-            --exclude 'github.com/buntas-tofu/dmf/security/advisories/new'
+            --exclude 'github.com/buntas-tofu/Inertia-Drift-Framework/security/advisories/new'
             './*.md' './.github/**/*.md'
           fail: true
 

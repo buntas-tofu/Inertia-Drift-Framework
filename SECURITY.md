@@ -6,7 +6,7 @@ This policy covers the DMF framework as published in this repository: the templa
 
 The primary channel for reporting security issues is **GitHub Security Advisories** for this repository:
 
-https://github.com/buntas-tofu/dmf/security/advisories/new
+https://github.com/buntas-tofu/Inertia-Drift-Framework/security/advisories/new
 
 Reports submitted through Security Advisories are private to the maintainer and the reporter while the issue is being investigated. Please use this channel rather than opening a public Issue.
 
