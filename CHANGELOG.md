@@ -6,6 +6,20 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- **The style floor now covers every text artifact format.** The linter's
+  floor check previously reached markdown only (the walk yielded five text
+  extensions and the floor admitted two of them). It now scans the text
+  artifact formats end to end: markdown, plain text, YAML, JSON, TOML,
+  INI, and the common source formats (Python, R, shell, SQL, SAS,
+  JavaScript, PowerShell, and the rest), so a rulebook YAML or a code
+  comment can no longer carry an em dash past CI. Captured data formats
+  (CSV, TSV) and run receipts stay out of scope: the floor governs
+  artifacts, not data. Adopters will see previously unchecked characters
+  at their next lint; fix the characters, do not narrow the check.
+  Linter version 2.1.0.
+
 ### Changed
 
 - **The public name is now Inertia-Drift-Framework.** DMF keeps the acronym

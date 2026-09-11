@@ -54,7 +54,9 @@ demands. Each new section in the contract is a mechanism, not a promise:
 
 - **The linter.** `scripts/inertia-drift-lint` is a pure-stdlib invariant
   linter: balanced DMF fences, link-pointer integrity, manifest schema,
-  status-line presence, and the style floor. It runs in CI, it runs on DMF
+  status-line presence, and the style floor across every text artifact
+  format (markdown, YAML, code comments, and the rest; captured data and
+  run receipts stay out of scope). It runs in CI, it runs on DMF
   itself, and it makes the invariants machine-checkable for the first time.
 - **Delegation semantics.** Contracts propagate to subagents; a child
   summary is a self-report, never a verdict; execution is the referee.
