@@ -1,0 +1,309 @@
+{
+  "cards": [
+    {
+      "awaiting": "",
+      "blocked_by": [],
+      "created": "2026-10-18",
+      "file": "cards/done/c-0001.toml",
+      "horizon": "near",
+      "id": "c-0001",
+      "lane": "governance/floor",
+      "links": [
+        "CHANGELOG.md"
+      ],
+      "models": [],
+      "note": "Shipped in the 2.1.0 linter. The floor check previously reached markdown only, because the walk yielded five text extensions and the floor admitted two of them. It now scans markdown, plain text, YAML, JSON, TOML, INI, and the common source formats end to end, so a rulebook YAML or a code comment can no longer carry an em dash past CI. Captured data formats and run receipts stay out of scope: the floor governs artifacts, not data.",
+      "owner": "maintainer",
+      "platform": "",
+      "project": "",
+      "state": "done",
+      "subtasks": [],
+      "tier": 1,
+      "title": "The style floor covers every text artifact format",
+      "updated": "2026-10-18",
+      "workers": []
+    },
+    {
+      "awaiting": "",
+      "blocked_by": [],
+      "created": "2026-10-18",
+      "file": "cards/done/c-0002.toml",
+      "horizon": "near",
+      "id": "c-0002",
+      "lane": "release/publishing",
+      "links": [
+        "CHANGELOG.md"
+      ],
+      "models": [],
+      "note": "The repository moved from buntas-tofu/dmf to buntas-tofu/Inertia-Drift-Framework and the old URL redirects. DMF keeps the acronym and the lineage. Verified on 2026-10-18: no stale repository references remain in tree.",
+      "owner": "maintainer",
+      "platform": "",
+      "project": "",
+      "state": "done",
+      "subtasks": [],
+      "tier": 1,
+      "title": "The public name is Inertia-Drift-Framework",
+      "updated": "2026-10-18",
+      "workers": []
+    },
+    {
+      "awaiting": "",
+      "blocked_by": [],
+      "created": "2026-10-18",
+      "file": "cards/done/c-0003.toml",
+      "horizon": "near",
+      "id": "c-0003",
+      "lane": "governance/rules",
+      "links": [
+        "CHANGELOG.md"
+      ],
+      "models": [],
+      "note": "Section 1 of the principal contract used to close with a clause that reached conversational replies and the agent's own reasoning. It now governs only text written to a file, committed, or handed to a person. Principal contract 1.2.0, and template/ plus both examples/ carry the same scoping so an adopter inherits it.",
+      "owner": "maintainer",
+      "platform": "",
+      "project": "",
+      "state": "done",
+      "subtasks": [],
+      "tier": 1,
+      "title": "Hard Style Constraints are scoped to artifacts",
+      "updated": "2026-10-18",
+      "workers": []
+    },
+    {
+      "awaiting": "",
+      "blocked_by": [],
+      "created": "2026-10-18",
+      "file": "cards/done/c-0006.toml",
+      "horizon": "near",
+      "id": "c-0006",
+      "lane": "adoption/template",
+      "links": [
+        "README.md"
+      ],
+      "models": [],
+      "note": "The card schema, the nested lane tree, the validator with the style floor enforced at write time, and an adoption guide. Proven on this repository's own backlog before it shipped: the six cards here are the framework's own work, not examples invented to fill a demo.",
+      "owner": "maintainer",
+      "platform": "",
+      "project": "",
+      "state": "done",
+      "subtasks": [],
+      "tier": 1,
+      "title": "Ship the board as a DMF template",
+      "updated": "2026-10-18",
+      "workers": []
+    },
+    {
+      "awaiting": "",
+      "blocked_by": [],
+      "created": "2026-10-18",
+      "file": "cards/ready/c-0004.toml",
+      "horizon": "near",
+      "id": "c-0004",
+      "lane": "release/versioning",
+      "links": [
+        "CHANGELOG.md"
+      ],
+      "models": [],
+      "note": "The Unreleased section carries three changes, one of which breaks adopters' next lint. Cutting 2.1.0 means a version bump, a tag under the release refs ruleset, and notes that lead with the floor expansion rather than burying it.",
+      "owner": "maintainer",
+      "platform": "",
+      "project": "",
+      "state": "ready",
+      "subtasks": [],
+      "tier": 1,
+      "title": "Release 2.1.0: version bump, tag, and release notes",
+      "updated": "2026-10-18",
+      "workers": []
+    },
+    {
+      "awaiting": "",
+      "blocked_by": [],
+      "created": "2026-10-18",
+      "file": "cards/shaping/c-0005.toml",
+      "horizon": "near",
+      "id": "c-0005",
+      "lane": "adoption/docs",
+      "links": [
+        "CHANGELOG.md"
+      ],
+      "models": [],
+      "note": "Adopters will see previously unchecked characters at their next lint. The changelog already says fix the characters, do not narrow the check, but that sentence lives in a changelog entry, which is where an adopter looks after the break rather than before it. Needs a short note in the adoption docs.",
+      "owner": "maintainer",
+      "platform": "",
+      "project": "",
+      "state": "shaping",
+      "subtasks": [],
+      "tier": 2,
+      "title": "Adoption note for the 2.1.0 floor expansion",
+      "updated": "2026-10-18",
+      "workers": []
+    }
+  ],
+  "counts": {
+    "active": 0,
+    "blocked": 0,
+    "done": 4,
+    "inbox": 0,
+    "ready": 1,
+    "review": 0,
+    "shaping": 1
+  },
+  "generated": "2026-10-18 13:20:42",
+  "lanes": [
+    {
+      "counts": {
+        "active": 0,
+        "blocked": 0,
+        "done": 2,
+        "inbox": 0,
+        "ready": 0,
+        "review": 0,
+        "shaping": 0
+      },
+      "level": "area",
+      "path": "governance",
+      "title": "Governance"
+    },
+    {
+      "counts": {
+        "active": 0,
+        "blocked": 0,
+        "done": 1,
+        "inbox": 0,
+        "ready": 0,
+        "review": 0,
+        "shaping": 0
+      },
+      "level": "topic",
+      "path": "governance/rules",
+      "title": "Rules and invariants"
+    },
+    {
+      "counts": {
+        "active": 0,
+        "blocked": 0,
+        "done": 0,
+        "inbox": 0,
+        "ready": 0,
+        "review": 0,
+        "shaping": 0
+      },
+      "level": "topic",
+      "path": "governance/linter",
+      "title": "Linter"
+    },
+    {
+      "counts": {
+        "active": 0,
+        "blocked": 0,
+        "done": 1,
+        "inbox": 0,
+        "ready": 0,
+        "review": 0,
+        "shaping": 0
+      },
+      "level": "topic",
+      "path": "governance/floor",
+      "title": "Style floor"
+    },
+    {
+      "counts": {
+        "active": 0,
+        "blocked": 0,
+        "done": 1,
+        "inbox": 0,
+        "ready": 0,
+        "review": 0,
+        "shaping": 1
+      },
+      "level": "area",
+      "path": "adoption",
+      "title": "Adoption"
+    },
+    {
+      "counts": {
+        "active": 0,
+        "blocked": 0,
+        "done": 0,
+        "inbox": 0,
+        "ready": 0,
+        "review": 0,
+        "shaping": 1
+      },
+      "level": "topic",
+      "path": "adoption/docs",
+      "title": "Documentation"
+    },
+    {
+      "counts": {
+        "active": 0,
+        "blocked": 0,
+        "done": 1,
+        "inbox": 0,
+        "ready": 0,
+        "review": 0,
+        "shaping": 0
+      },
+      "level": "topic",
+      "path": "adoption/template",
+      "title": "Template"
+    },
+    {
+      "counts": {
+        "active": 0,
+        "blocked": 0,
+        "done": 0,
+        "inbox": 0,
+        "ready": 0,
+        "review": 0,
+        "shaping": 0
+      },
+      "level": "topic",
+      "path": "adoption/examples",
+      "title": "Examples"
+    },
+    {
+      "counts": {
+        "active": 0,
+        "blocked": 0,
+        "done": 1,
+        "inbox": 0,
+        "ready": 1,
+        "review": 0,
+        "shaping": 0
+      },
+      "level": "area",
+      "path": "release",
+      "title": "Release"
+    },
+    {
+      "counts": {
+        "active": 0,
+        "blocked": 0,
+        "done": 0,
+        "inbox": 0,
+        "ready": 1,
+        "review": 0,
+        "shaping": 0
+      },
+      "level": "topic",
+      "path": "release/versioning",
+      "title": "Versioning"
+    },
+    {
+      "counts": {
+        "active": 0,
+        "blocked": 0,
+        "done": 1,
+        "inbox": 0,
+        "ready": 0,
+        "review": 0,
+        "shaping": 0
+      },
+      "level": "topic",
+      "path": "release/publishing",
+      "title": "Publishing"
+    }
+  ],
+  "total": 6
+}

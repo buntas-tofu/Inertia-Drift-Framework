@@ -101,6 +101,7 @@ markdown and JSON, plus one stdlib script.
 ```
 inertia-drift-framework/
 ├── template/          # the four artifacts adopters copy into their project
+├── board/             # the project board: cards in files, self-validating
 ├── examples/          # worked examples of populated DMF instances
 │   └── buntas-tofu/   # this principal's filled-in template, reference for
 │                      # what GLOBAL looks like populated for one principal
@@ -110,6 +111,13 @@ inertia-drift-framework/
 ├── CHANGELOG.md
 └── README.md          # this file
 ```
+
+The board is optional and independent of the four artifacts: copy it into a
+repository and it works, or leave it. It is here because a framework that
+governs agent-assisted work should be able to show its own work, and because a
+card store in files is the cheapest honest answer to "what is actually
+happening" that needs no service, account, or database. See
+[`board/README.md`](board/README.md).
 
 ## History
 
