@@ -1,0 +1,87 @@
+# The lanes. This file is an example as much as a config: rename these to your
+# own areas, and `validate` will name every card that needs re-homing.
+#
+# A lane's `path` is its full identity, slash separated, and every ancestor must
+# be declared here. `level` must match the path's depth as declared in
+# board.toml's lane_levels.
+
+# --- areas -------------------------------------------------------------------
+
+[[lane]]
+path = "governance"
+level = "area"
+title = "Governance"
+order = 10
+summary = "The rules themselves: invariants, authority model, and the linter that enforces them."
+
+[[lane]]
+path = "adoption"
+level = "area"
+title = "Adoption"
+order = 20
+summary = "Everything an adopter touches: docs, the template, examples, onboarding."
+
+[[lane]]
+path = "release"
+level = "area"
+title = "Release"
+order = 30
+summary = "Versioning, packaging, tags, and the public identity of the project."
+
+# --- topics ------------------------------------------------------------------
+
+[[lane]]
+path = "governance/rules"
+level = "topic"
+title = "Rules and invariants"
+order = 10
+summary = "The written contract: hard constraints, authority tiers, evidence grading."
+
+[[lane]]
+path = "governance/linter"
+level = "topic"
+title = "Linter"
+order = 20
+summary = "The invariant linter: what it walks, what it refuses, and what it still misses."
+
+[[lane]]
+path = "governance/floor"
+level = "topic"
+title = "Style floor"
+order = 30
+summary = "Banned characters and formats, and which artifact formats the check reaches."
+
+[[lane]]
+path = "adoption/docs"
+level = "topic"
+title = "Documentation"
+order = 10
+summary = "The README, the guides, and the words an adopter reads first."
+
+[[lane]]
+path = "adoption/template"
+level = "topic"
+title = "Template"
+order = 20
+summary = "The copyable starting point: AGENTS.md, the manifest, and the board."
+
+[[lane]]
+path = "adoption/examples"
+level = "topic"
+title = "Examples"
+order = 30
+summary = "Worked examples that prove a rule rather than describe it."
+
+[[lane]]
+path = "release/versioning"
+level = "topic"
+title = "Versioning"
+order = 10
+summary = "Semantic version, changelog discipline, and what counts as a release."
+
+[[lane]]
+path = "release/publishing"
+level = "topic"
+title = "Publishing"
+order = 20
+summary = "Repository name, URLs, packages, and the public record of a move."
