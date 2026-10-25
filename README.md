@@ -78,6 +78,12 @@ demands. Each new section in the contract is a mechanism, not a promise:
 
 ## How to Adopt
 
+**Before adopting or upgrading to the 2.1.0 linter:** the expanded style floor
+scans YAML, JSON, TOML, and common source files as well as markdown. Unchanged
+project files can fail the next lint. Fix the reported characters; do not
+narrow the floor check to hide violations. See the
+[detailed adopter guidance](RELEASE_NOTES.md#adopter-impact-the-lint-floor-reaches-more-artifacts).
+
 1. Copy the contents of `template/` into your project (or a clean directory
    if starting fresh).
 2. Open `template/README.md` and `template/AGENTS.md`. The `DMF:INITIAL`
@@ -87,7 +93,15 @@ demands. Each new section in the contract is a mechanism, not a promise:
    cannot answer, populates the `DMF:LOCAL` sections, and deletes the
    `DMF:INITIAL` blocks.
 4. Copy `scripts/inertia-drift-lint` into your project (or wire it as a CI
-   step). Commit. The project is now under DMF governance, and the
+   step). Before committing, verify the version and lint the project:
+
+   ```sh
+   python3 scripts/inertia-drift-lint --version
+   python3 scripts/inertia-drift-lint .
+   ```
+
+   The version should report `inertia-drift-lint 2.1.0`. Fix any findings and
+   rerun lint, then commit. The project is now under DMF governance, and the
    governance is machine-checked.
 
 The four template artifacts:
