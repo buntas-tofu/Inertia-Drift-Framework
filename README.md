@@ -2,8 +2,9 @@
 
 **DMF for short. Catch the drift you get from inertia.**
 
-Release target: **2.1.0**, unreleased. See the
-[draft release notes](RELEASE_NOTES.md) for the expanded lint floor and
+Release preparation: **2.1.0**, dated **2026-10-25**, for tag `v2.1.0`.
+Tagging and publication are pending. See the
+[release notes](RELEASE_NOTES.md) for the expanded lint floor and
 adopter guidance, and [CHANGELOG.md](CHANGELOG.md) for release history.
 
 A governance framework designed to prevent drift, ambiguity, and authority

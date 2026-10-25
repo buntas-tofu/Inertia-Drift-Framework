@@ -4,6 +4,29 @@
       "awaiting": "",
       "blocked_by": [],
       "created": "2026-10-18",
+      "file": "cards/active/c-0004.toml",
+      "horizon": "near",
+      "id": "c-0004",
+      "lane": "release/versioning",
+      "links": [
+        "CHANGELOG.md"
+      ],
+      "models": [],
+      "note": "Release execution approved on 2026-10-25. Version 2.1.0 is retained as MINOR for broader enforcement of the existing artifact policy plus the additive board feature; stricter lint acceptance is acknowledged in RELEASE_NOTES.md. Adoption warning accepted in c-0005. Dated material for 2026-10-25 and tag v2.1.0 is being finalized through protected PRs. Tagging and GitHub publication remain pending verification.",
+      "owner": "maintainer",
+      "platform": "",
+      "project": "",
+      "state": "active",
+      "subtasks": [],
+      "tier": 1,
+      "title": "Release 2.1.0: version bump, tag, and release notes",
+      "updated": "2026-10-25",
+      "workers": []
+    },
+    {
+      "awaiting": "",
+      "blocked_by": [],
+      "created": "2026-10-18",
       "file": "cards/done/c-0001.toml",
       "horizon": "near",
       "id": "c-0001",
@@ -73,6 +96,29 @@
       "awaiting": "",
       "blocked_by": [],
       "created": "2026-10-18",
+      "file": "cards/done/c-0005.toml",
+      "horizon": "near",
+      "id": "c-0005",
+      "lane": "adoption/docs",
+      "links": [
+        "CHANGELOG.md"
+      ],
+      "models": [],
+      "note": "Accepted for the 2.1.0 release under maintainer finish approval on 2026-10-25. PR #3 merged as da2d05abbc926a60ff1ca1167b08478efa58f3c7. README How to Adopt warns before copying or wiring the linter, shows version and lint commands, and directs adopters to fix characters without narrowing the check. RELEASE_NOTES.md carries the detailed guidance.",
+      "owner": "maintainer",
+      "platform": "",
+      "project": "",
+      "state": "done",
+      "subtasks": [],
+      "tier": 1,
+      "title": "Adoption note for the 2.1.0 floor expansion",
+      "updated": "2026-10-25",
+      "workers": []
+    },
+    {
+      "awaiting": "",
+      "blocked_by": [],
+      "created": "2026-10-18",
       "file": "cards/done/c-0006.toml",
       "horizon": "near",
       "id": "c-0006",
@@ -91,64 +137,18 @@
       "title": "Ship the board as a DMF template",
       "updated": "2026-10-18",
       "workers": []
-    },
-    {
-      "awaiting": "",
-      "blocked_by": [],
-      "created": "2026-10-18",
-      "file": "cards/ready/c-0004.toml",
-      "horizon": "near",
-      "id": "c-0004",
-      "lane": "release/versioning",
-      "links": [
-        "CHANGELOG.md"
-      ],
-      "models": [],
-      "note": "The Unreleased section carries three changes, one of which breaks adopters' next lint. Cutting 2.1.0 means a version bump, a tag under the release refs ruleset, and notes that lead with the floor expansion rather than burying it.",
-      "owner": "maintainer",
-      "platform": "",
-      "project": "",
-      "state": "ready",
-      "subtasks": [],
-      "tier": 1,
-      "title": "Release 2.1.0: version bump, tag, and release notes",
-      "updated": "2026-10-18",
-      "workers": []
-    },
-    {
-      "awaiting": "",
-      "blocked_by": [],
-      "created": "2026-10-18",
-      "file": "cards/shaping/c-0005.toml",
-      "horizon": "near",
-      "id": "c-0005",
-      "lane": "adoption/docs",
-      "links": [
-        "CHANGELOG.md"
-      ],
-      "models": [],
-      "note": "Adopters will see previously unchecked characters at their next lint. The changelog already says fix the characters, do not narrow the check, but that sentence lives in a changelog entry, which is where an adopter looks after the break rather than before it. Needs a short note in the adoption docs.",
-      "owner": "maintainer",
-      "platform": "",
-      "project": "",
-      "state": "shaping",
-      "subtasks": [],
-      "tier": 2,
-      "title": "Adoption note for the 2.1.0 floor expansion",
-      "updated": "2026-10-18",
-      "workers": []
     }
   ],
   "counts": {
-    "active": 0,
+    "active": 1,
     "blocked": 0,
-    "done": 4,
+    "done": 5,
     "inbox": 0,
-    "ready": 1,
+    "ready": 0,
     "review": 0,
-    "shaping": 1
+    "shaping": 0
   },
-  "generated": "2026-10-18 13:20:42",
+  "generated": "2026-10-25 15:16:13",
   "lanes": [
     {
       "counts": {
@@ -210,11 +210,11 @@
       "counts": {
         "active": 0,
         "blocked": 0,
-        "done": 1,
+        "done": 2,
         "inbox": 0,
         "ready": 0,
         "review": 0,
-        "shaping": 1
+        "shaping": 0
       },
       "level": "area",
       "path": "adoption",
@@ -224,11 +224,11 @@
       "counts": {
         "active": 0,
         "blocked": 0,
-        "done": 0,
+        "done": 1,
         "inbox": 0,
         "ready": 0,
         "review": 0,
-        "shaping": 1
+        "shaping": 0
       },
       "level": "topic",
       "path": "adoption/docs",
@@ -264,11 +264,11 @@
     },
     {
       "counts": {
-        "active": 0,
+        "active": 1,
         "blocked": 0,
         "done": 1,
         "inbox": 0,
-        "ready": 1,
+        "ready": 0,
         "review": 0,
         "shaping": 0
       },
@@ -278,11 +278,11 @@
     },
     {
       "counts": {
-        "active": 0,
+        "active": 1,
         "blocked": 0,
         "done": 0,
         "inbox": 0,
-        "ready": 1,
+        "ready": 0,
         "review": 0,
         "shaping": 0
       },

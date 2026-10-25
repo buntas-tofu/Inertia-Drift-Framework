@@ -6,9 +6,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-Planned release: **2.1.0**, as recorded in
-[`c-0004`](board/cards/ready/c-0004.toml). See the
-[draft release notes](RELEASE_NOTES.md). Release date and tag are pending.
+## [2.1.0] - 2026-10-25
+
+Final material for `v2.1.0`; tagging and publication are pending verification
+under [`c-0004`](board/cards/active/c-0004.toml). See the
+[release notes](RELEASE_NOTES.md) for adopter guidance and the MINOR rationale.
 
 ### Added
 
