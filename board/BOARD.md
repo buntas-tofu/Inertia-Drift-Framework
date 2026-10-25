@@ -1,10 +1,10 @@
 # Board
 
-Generated 2026-10-18 13:20:42 by `tools/board.py index`. This is a view, not the truth.
+Generated 2026-10-25 15:16:13 by `tools/board.py index`. This is a view, not the truth.
 The truth is one TOML file per card under `cards/`. If a card moved since
 this stamp, this page is wrong and the file is right.
 
-**6 cards** in 3 columns, across 11 declared lanes.
+**6 cards** in 2 columns, across 11 declared lanes.
 
 ## Flight
 
@@ -12,21 +12,19 @@ this stamp, this page is wrong and the file is right.
 
 _empty_
 
-### shaping (1)
+### shaping (0)
 
-| id | title | lane | owner | tier |
-|---|---|---|---|---|
-| c-0005 | Adoption note for the 2.1.0 floor expansion | adoption/docs | maintainer | 2 |
+_empty_
 
-### ready (1)
+### ready (0)
+
+_empty_
+
+### active (1)
 
 | id | title | lane | owner | tier |
 |---|---|---|---|---|
 | c-0004 | Release 2.1.0: version bump, tag, and release notes | release/versioning | maintainer | 1 |
-
-### active (0)
-
-_empty_
 
 ### blocked (0)
 
@@ -36,10 +34,11 @@ _empty_
 
 _empty_
 
-### done (4)
+### done (5)
 
 | id | title | lane | owner | tier |
 |---|---|---|---|---|
+| c-0005 | Adoption note for the 2.1.0 floor expansion | adoption/docs | maintainer | 1 |
 | c-0006 | Ship the board as a DMF template | adoption/template | maintainer | 1 |
 | c-0001 | The style floor covers every text artifact format | governance/floor | maintainer | 1 |
 | c-0003 | Hard Style Constraints are scoped to artifacts | governance/rules | maintainer | 1 |
@@ -55,11 +54,11 @@ Counts roll up: a parent lane includes everything nested under it.
 | governance/rules | topic | . | . | . | . | . | . | 1 | 1 |
 | governance/linter | topic | . | . | . | . | . | . | . | 0 |
 | governance/floor | topic | . | . | . | . | . | . | 1 | 1 |
-| adoption | area | . | 1 | . | . | . | . | 1 | 2 |
-| adoption/docs | topic | . | 1 | . | . | . | . | . | 1 |
+| adoption | area | . | . | . | . | . | . | 2 | 2 |
+| adoption/docs | topic | . | . | . | . | . | . | 1 | 1 |
 | adoption/template | topic | . | . | . | . | . | . | 1 | 1 |
 | adoption/examples | topic | . | . | . | . | . | . | . | 0 |
-| release | area | . | . | 1 | . | . | . | 1 | 2 |
-| release/versioning | topic | . | . | 1 | . | . | . | . | 1 |
+| release | area | . | . | . | 1 | . | . | 1 | 2 |
+| release/versioning | topic | . | . | . | 1 | . | . | . | 1 |
 | release/publishing | topic | . | . | . | . | . | . | 1 | 1 |
 

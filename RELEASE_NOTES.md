@@ -1,11 +1,10 @@
-# 2.1.0 release notes (draft)
+# 2.1.0 release notes
 
-Status: Unreleased preparation for maintainer review. These notes do not record
-a tag or published release; the maintainer decides when to release.
+Status: Final release material for maintainer execution. Tagging and GitHub
+publication are pending verification.
 
-Target: **2.1.0**, from [`c-0004`](board/cards/ready/c-0004.toml).
-Release date and tag are pending. The [changelog](CHANGELOG.md) remains
-Unreleased until release execution.
+Version: **2.1.0**. Release date: **2026-10-25**. Intended tag: `v2.1.0`.
+Release execution is tracked in [`c-0004`](board/cards/active/c-0004.toml).
 
 ## Adopter impact: the lint floor reaches more artifacts
 
@@ -48,22 +47,32 @@ Before adopting the updated linter:
 - **Artifact scope.** Hard Style Constraints are scoped to artifacts in the
   principal contract, template, and worked example.
 
-## Version scope and release decisions
+## Version scope and MINOR classification
 
-The release target and the bundled linter are 2.1.0. The root `AGENTS.md`
-frontmatter is prepared for 2.1.0. Template and worked-example frontmatter,
+The release and the bundled linter are 2.1.0. The root `AGENTS.md`
+frontmatter is 2.1.0. Template and worked-example frontmatter,
 manifest-file versions, sample-project versions, historical release entries,
 and completed board cards retain their independent or historical values.
 
-Before release, the maintainer still needs to:
+The maintainer's 2026-10-25 finish approval retains the planned 2.1.0 MINOR.
+The 2.0 contract already applied the style floor to persisted artifacts,
+including code comments. The expanded scan corrects enforcement of that
+existing policy, and the optional project board adds functionality. This is
+the classification basis, rather than the absence of CLI argument or manifest
+schema changes.
 
-- Confirm the planned 2.1.0 MINOR classification despite the expanded lint
-  floor changing acceptance for existing adopters.
-- Review the [adoption warning](README.md#how-to-adopt) against
-  [`c-0005`](board/cards/shaping/c-0005.toml). The card remains open;
-  documenting the warning does not approve a release.
-- Review acceptance results on the final release commit, including the
-  configured CI checks.
-- Choose the release date and tag spelling, and execute tagging under the
-  release refs ruleset before publication. Card `c-0004` stays open until
-  its full release work is complete.
+**Lint acceptance is stricter.** Previously passing projects can now fail on
+unchanged files. That compatibility impact is explicit in the adoption
+warning and the guidance above.
+
+The [adoption warning](README.md#how-to-adopt) was accepted for this release
+after [PR #3](https://github.com/buntas-tofu/Inertia-Drift-Framework/pull/3)
+merged. Its record is [`c-0005`](board/cards/done/c-0005.toml).
+
+## Release execution
+
+The release commit must pass `drift`, `links`, `markdown`, and `validate`
+before tagging and publication. The active release refs ruleset protects tags
+against deletion and non-fast-forward updates. Card `c-0004` remains active
+until the `v2.1.0` target and published GitHub release are verified; the tag
+will remain fixed if a later board reconciliation advances main.
