@@ -33,6 +33,10 @@ Planned release: **2.1.0**, as recorded in
 
 ### Changed
 
+- **Adoption guidance warns before the linter is copied or wired into CI.**
+  The 2.1.0 note covers newly failing files, validation commands, and fixing
+  characters without narrowing the floor check.
+
 - **The public name is now Inertia-Drift-Framework.** DMF keeps the acronym
   and the lineage; the long form now says what the linter does. The
   repository moved from buntas-tofu/dmf to buntas-tofu/Inertia-Drift-

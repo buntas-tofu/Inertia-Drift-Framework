@@ -20,6 +20,9 @@ directories remain outside the floor scan. Hard style constraints govern
 artifacts, including code comments, rather than conversational replies or the
 agent's reasoning.
 
+The [How to Adopt guide](README.md#how-to-adopt) places this warning before
+the linter-copy step and includes the validation commands.
+
 Before adopting the updated linter:
 
 1. Review the formats and exclusions in `FLOOR_SUFFIXES` and
@@ -56,9 +59,9 @@ Before release, the maintainer still needs to:
 
 - Confirm the planned 2.1.0 MINOR classification despite the expanded lint
   floor changing acceptance for existing adopters.
-- Decide whether the separate adoption-documentation work in
-  [`c-0005`](board/cards/shaping/c-0005.toml) must land first. This draft does
-  not complete that card.
+- Review the [adoption warning](README.md#how-to-adopt) against
+  [`c-0005`](board/cards/shaping/c-0005.toml). The card remains open;
+  documenting the warning does not approve a release.
 - Review acceptance results on the final release commit, including the
   configured CI checks.
 - Choose the release date and tag spelling, and execute tagging under the
