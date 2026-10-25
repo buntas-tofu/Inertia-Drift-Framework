@@ -2,6 +2,10 @@
 
 **DMF for short. Catch the drift you get from inertia.**
 
+Release target: **2.1.0**, unreleased. See the
+[draft release notes](RELEASE_NOTES.md) for the expanded lint floor and
+adopter guidance, and [CHANGELOG.md](CHANGELOG.md) for release history.
+
 A governance framework designed to prevent drift, ambiguity, and authority
 confusion when working with LLMs and AI-assisted development. Lightweight,
 file-based, principal-scoped, copy into any project.

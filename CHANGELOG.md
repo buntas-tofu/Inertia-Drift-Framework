@@ -6,14 +6,11 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-### Added
+Planned release: **2.1.0**, as recorded in
+[`c-0004`](board/cards/ready/c-0004.toml). See the
+[draft release notes](RELEASE_NOTES.md). Release date and tag are pending.
 
-- **The project board ships as a template.** `board/` carries a card store in
-  files, a nested lane tree, a validator that enforces the style floor at write
-  time, and an adoption guide. Proven on this repository's own backlog before it
-  shipped: the six cards it starts with are DMF's own work, not a demo. No
-  service, no account, no database; every view is generated from the cards, and
-  the diff is the audit trail.
+### Added
 
 - **The style floor now covers every text artifact format.** The linter's
   floor check previously reached markdown only (the walk yielded five text
@@ -26,6 +23,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   artifacts, not data. Adopters will see previously unchecked characters
   at their next lint; fix the characters, do not narrow the check.
   Linter version 2.1.0.
+
+- **The project board ships as a template.** `board/` carries a card store in
+  files, a nested lane tree, a validator that enforces the style floor at write
+  time, and an adoption guide. Proven on this repository's own backlog before it
+  shipped: the six cards it starts with are DMF's own work, not a demo. No
+  service, no account, no database; every view is generated from the cards, and
+  the diff is the audit trail.
 
 ### Changed
 
