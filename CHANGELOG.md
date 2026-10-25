@@ -9,8 +9,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [2.1.0] - 2026-10-25
 
 Tag `v2.1.0` is verified at `be12b3406ff863ff3da4d7d69e9ed3ae7f221721`.
-GitHub release publication is pending under
-[`c-0004`](board/cards/blocked/c-0004.toml). See the
+[GitHub publication](https://github.com/buntas-tofu/Inertia-Drift-Framework/releases/tag/v2.1.0)
+occurred at `2026-10-25T19:38:23Z` and was independently verified. The completed record is
+[`c-0004`](board/cards/done/c-0004.toml). See the
 [release notes](RELEASE_NOTES.md) for adopter guidance and the MINOR rationale.
 
 ### Added

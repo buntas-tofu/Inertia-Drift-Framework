@@ -2,8 +2,8 @@
 
 **DMF for short. Catch the drift you get from inertia.**
 
-Version **2.1.0** is tagged as `v2.1.0` for **2026-10-25**.
-GitHub release publication is pending. See the
+Current release: **2.1.0**, published **2026-10-25** as
+[`v2.1.0`](https://github.com/buntas-tofu/Inertia-Drift-Framework/releases/tag/v2.1.0). See the
 [release notes](RELEASE_NOTES.md) for the expanded lint floor and
 adopter guidance, and [CHANGELOG.md](CHANGELOG.md) for release history.
 

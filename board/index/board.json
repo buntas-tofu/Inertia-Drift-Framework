@@ -1,29 +1,6 @@
 {
   "cards": [
     {
-      "awaiting": "external",
-      "blocked_by": [],
-      "created": "2026-10-18",
-      "file": "cards/blocked/c-0004.toml",
-      "horizon": "near",
-      "id": "c-0004",
-      "lane": "release/versioning",
-      "links": [
-        "CHANGELOG.md"
-      ],
-      "models": [],
-      "note": "Tag v2.1.0 was created and verified on 2026-10-25. Annotated tag object 6afb9cfb2e6f01e109bc561da53f68edb84d5efe resolves to release commit be12b3406ff863ff3da4d7d69e9ed3ae7f221721; drift, links, markdown and validate passed on that exact commit. GitHub release creation failed at the CLI GraphQL route with Forbidden. The connector releases API confirms no release was created. Publication awaits an authorized API or UI path; do not move the existing tag. Close this card only after published release verification.",
-      "owner": "maintainer",
-      "platform": "",
-      "project": "",
-      "state": "blocked",
-      "subtasks": [],
-      "tier": 1,
-      "title": "Release 2.1.0: version bump, tag, and release notes",
-      "updated": "2026-10-25",
-      "workers": []
-    },
-    {
       "awaiting": "",
       "blocked_by": [],
       "created": "2026-10-18",
@@ -96,6 +73,29 @@
       "awaiting": "",
       "blocked_by": [],
       "created": "2026-10-18",
+      "file": "cards/done/c-0004.toml",
+      "horizon": "near",
+      "id": "c-0004",
+      "lane": "release/versioning",
+      "links": [
+        "CHANGELOG.md"
+      ],
+      "models": [],
+      "note": "Release 2.1.0 completed. GitHub release ID 423618514 at https://github.com/buntas-tofu/Inertia-Drift-Framework/releases/tag/v2.1.0 was independently verified published at 2026-10-25T19:38:23Z, with draft=false and prerelease=false. The published body matches the prepared notes after line-ending normalization. Annotated tag v2.1.0 remains object 6afb9cfb2e6f01e109bc561da53f68edb84d5efe targeting be12b3406ff863ff3da4d7d69e9ed3ae7f221721, whose four required CI checks passed before tagging. c-0005 is accepted and done. The maintainer published the release after the initial CLI publication blocker; no denied publication retry, tag movement, or release edit was performed during closure.",
+      "owner": "maintainer",
+      "platform": "",
+      "project": "",
+      "state": "done",
+      "subtasks": [],
+      "tier": 1,
+      "title": "Release 2.1.0: version bump, tag, and release notes",
+      "updated": "2026-10-25",
+      "workers": []
+    },
+    {
+      "awaiting": "",
+      "blocked_by": [],
+      "created": "2026-10-18",
       "file": "cards/done/c-0005.toml",
       "horizon": "near",
       "id": "c-0005",
@@ -141,14 +141,14 @@
   ],
   "counts": {
     "active": 0,
-    "blocked": 1,
-    "done": 5,
+    "blocked": 0,
+    "done": 6,
     "inbox": 0,
     "ready": 0,
     "review": 0,
     "shaping": 0
   },
-  "generated": "2026-10-25 15:25:44",
+  "generated": "2026-10-25 19:41:29",
   "lanes": [
     {
       "counts": {
@@ -265,8 +265,8 @@
     {
       "counts": {
         "active": 0,
-        "blocked": 1,
-        "done": 1,
+        "blocked": 0,
+        "done": 2,
         "inbox": 0,
         "ready": 0,
         "review": 0,
@@ -279,8 +279,8 @@
     {
       "counts": {
         "active": 0,
-        "blocked": 1,
-        "done": 0,
+        "blocked": 0,
+        "done": 1,
         "inbox": 0,
         "ready": 0,
         "review": 0,

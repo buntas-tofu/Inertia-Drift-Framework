@@ -1,10 +1,10 @@
 # 2.1.0 release notes
 
-Status: Tagged release material for adopters and maintainers. GitHub release
-publication is pending.
+Status: Published release notes for adopters and maintainers. GitHub release
+publication and the unchanged tag target have been verified.
 
 Version: **2.1.0**. Release date: **2026-10-25**. Verified tag: `v2.1.0`.
-Release execution is tracked in [`c-0004`](board/cards/blocked/c-0004.toml).
+Release execution is recorded in [`c-0004`](board/cards/done/c-0004.toml).
 
 ## Adopter impact: the lint floor reaches more artifacts
 
@@ -81,11 +81,20 @@ was pushed and verified to resolve to that exact release commit on 2026-10-25.
 The release refs ruleset remains active; the tag will not be moved as later
 board reconciliation advances main.
 
-GitHub release creation was attempted with `gh release create --verify-tag`.
-The CLI failed with `Post "https://api.github.com/graphql": Forbidden`.
-An independent read through the connected GitHub app returned an empty
-releases list after the attempt. Publication remains uncompleted.
+The initial CLI publication attempt failed with
+`Post "https://api.github.com/graphql": Forbidden`, and the connected GitHub
+app confirmed that no release existed at that checkpoint. The maintainer
+subsequently published the release; the failed CLI action was not retried.
 
-Card `c-0004` is blocked awaiting an authorized API or UI path to publish
-the existing tag. After publication is verified, close the card and regenerate
-its views through the protected PR workflow without changing `v2.1.0`.
+[GitHub release `v2.1.0`](https://github.com/buntas-tofu/Inertia-Drift-Framework/releases/tag/v2.1.0),
+ID `423618514`, was independently verified through the connected GitHub app:
+
+- Published at `2026-10-25T19:38:23Z`.
+- `draft: false` and `prerelease: false`.
+- Published title: `Inertia-Drift-Framework 2.1.0,`.
+- Body matches the prepared publication notes after line-ending normalization.
+- Annotated tag object and target remain exactly as recorded above.
+
+The publication blocker is resolved. Card `c-0004` is done, with its moved
+links and generated views reconciled through the protected PR workflow.
+The published release and existing tag were not edited during closure.
