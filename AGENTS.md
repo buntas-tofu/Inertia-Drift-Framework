@@ -5,7 +5,7 @@ date: "2026-03-10"
 tags: ["agents", "governance", "dmf"]
 owners: ["buntas-tofu"]
 status: "active"
-version: "2.0.0"
+version: "2.1.0"
 provenance:
   last_reviewed: "2026-09-09"
   sources: ["HIGHWIND_PROJECT_STATEMENT_v1.0.0_CANON.md"]
