@@ -1,10 +1,10 @@
 {
   "cards": [
     {
-      "awaiting": "",
+      "awaiting": "external",
       "blocked_by": [],
       "created": "2026-10-18",
-      "file": "cards/active/c-0004.toml",
+      "file": "cards/blocked/c-0004.toml",
       "horizon": "near",
       "id": "c-0004",
       "lane": "release/versioning",
@@ -12,11 +12,11 @@
         "CHANGELOG.md"
       ],
       "models": [],
-      "note": "Release execution approved on 2026-10-25. Version 2.1.0 is retained as MINOR for broader enforcement of the existing artifact policy plus the additive board feature; stricter lint acceptance is acknowledged in RELEASE_NOTES.md. Adoption warning accepted in c-0005. Dated material for 2026-10-25 and tag v2.1.0 is being finalized through protected PRs. Tagging and GitHub publication remain pending verification.",
+      "note": "Tag v2.1.0 was created and verified on 2026-10-25. Annotated tag object 6afb9cfb2e6f01e109bc561da53f68edb84d5efe resolves to release commit be12b3406ff863ff3da4d7d69e9ed3ae7f221721; drift, links, markdown and validate passed on that exact commit. GitHub release creation failed at the CLI GraphQL route with Forbidden. The connector releases API confirms no release was created. Publication awaits an authorized API or UI path; do not move the existing tag. Close this card only after published release verification.",
       "owner": "maintainer",
       "platform": "",
       "project": "",
-      "state": "active",
+      "state": "blocked",
       "subtasks": [],
       "tier": 1,
       "title": "Release 2.1.0: version bump, tag, and release notes",
@@ -140,15 +140,15 @@
     }
   ],
   "counts": {
-    "active": 1,
-    "blocked": 0,
+    "active": 0,
+    "blocked": 1,
     "done": 5,
     "inbox": 0,
     "ready": 0,
     "review": 0,
     "shaping": 0
   },
-  "generated": "2026-10-25 15:16:13",
+  "generated": "2026-10-25 15:25:44",
   "lanes": [
     {
       "counts": {
@@ -264,8 +264,8 @@
     },
     {
       "counts": {
-        "active": 1,
-        "blocked": 0,
+        "active": 0,
+        "blocked": 1,
         "done": 1,
         "inbox": 0,
         "ready": 0,
@@ -278,8 +278,8 @@
     },
     {
       "counts": {
-        "active": 1,
-        "blocked": 0,
+        "active": 0,
+        "blocked": 1,
         "done": 0,
         "inbox": 0,
         "ready": 0,

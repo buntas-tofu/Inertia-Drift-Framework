@@ -1,10 +1,10 @@
 # 2.1.0 release notes
 
-Status: Final release material for maintainer execution. Tagging and GitHub
-publication are pending verification.
+Status: Tagged release material for adopters and maintainers. GitHub release
+publication is pending.
 
-Version: **2.1.0**. Release date: **2026-10-25**. Intended tag: `v2.1.0`.
-Release execution is tracked in [`c-0004`](board/cards/active/c-0004.toml).
+Version: **2.1.0**. Release date: **2026-10-25**. Verified tag: `v2.1.0`.
+Release execution is tracked in [`c-0004`](board/cards/blocked/c-0004.toml).
 
 ## Adopter impact: the lint floor reaches more artifacts
 
@@ -71,8 +71,21 @@ merged. Its record is [`c-0005`](board/cards/done/c-0005.toml).
 
 ## Release execution
 
-The release commit must pass `drift`, `links`, `markdown`, and `validate`
-before tagging and publication. The active release refs ruleset protects tags
-against deletion and non-fast-forward updates. Card `c-0004` remains active
-until the `v2.1.0` target and published GitHub release are verified; the tag
-will remain fixed if a later board reconciliation advances main.
+Release commit: `be12b3406ff863ff3da4d7d69e9ed3ae7f221721`.
+Its four required checks passed:
+[drift, links, and markdown](https://github.com/buntas-tofu/Inertia-Drift-Framework/actions/runs/40206354366),
+and [validate](https://github.com/buntas-tofu/Inertia-Drift-Framework/actions/runs/40206354321).
+
+Annotated tag `v2.1.0`, object `6afb9cfb2e6f01e109bc561da53f68edb84d5efe`,
+was pushed and verified to resolve to that exact release commit on 2026-10-25.
+The release refs ruleset remains active; the tag will not be moved as later
+board reconciliation advances main.
+
+GitHub release creation was attempted with `gh release create --verify-tag`.
+The CLI failed with `Post "https://api.github.com/graphql": Forbidden`.
+An independent read through the connected GitHub app returned an empty
+releases list after the attempt. Publication remains uncompleted.
+
+Card `c-0004` is blocked awaiting an authorized API or UI path to publish
+the existing tag. After publication is verified, close the card and regenerate
+its views through the protected PR workflow without changing `v2.1.0`.

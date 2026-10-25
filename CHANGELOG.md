@@ -8,8 +8,9 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [2.1.0] - 2026-10-25
 
-Final material for `v2.1.0`; tagging and publication are pending verification
-under [`c-0004`](board/cards/active/c-0004.toml). See the
+Tag `v2.1.0` is verified at `be12b3406ff863ff3da4d7d69e9ed3ae7f221721`.
+GitHub release publication is pending under
+[`c-0004`](board/cards/blocked/c-0004.toml). See the
 [release notes](RELEASE_NOTES.md) for adopter guidance and the MINOR rationale.
 
 ### Added
