@@ -2,8 +2,8 @@
 
 **DMF for short. Catch the drift you get from inertia.**
 
-Release preparation: **2.1.0**, dated **2026-10-25**, for tag `v2.1.0`.
-Tagging and publication are pending. See the
+Version **2.1.0** is tagged as `v2.1.0` for **2026-10-25**.
+GitHub release publication is pending. See the
 [release notes](RELEASE_NOTES.md) for the expanded lint floor and
 adopter guidance, and [CHANGELOG.md](CHANGELOG.md) for release history.
 
